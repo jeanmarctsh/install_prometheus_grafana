@@ -26,17 +26,22 @@ Il existe divers méthodes pour installer prometheus et grafana. En ce qui nous 
 
 * ETAPES 1
 
-  1. [installation docker](https://docs.docker.com/engine/install/ubuntu)
-  2. [installation docker compose](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
+  - [installation docker](https://docs.docker.com/engine/install/ubuntu)
+  - [installation docker compose](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
+
+
+---
 
 * ETAPES 2
   
   1. Dans la home directory (/home/username ou ~):
      
      - sudo mkdir nom_du_dossier
-     - sudo nano docker-compose.yml ( lien vers le fichier de configuration: )
-     - sudo nano prometheus.yml (lien vers le fichier de configuration: )
+     - sudo nano docker-compose.yml ( lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/docker-compose.yml* )
+     - sudo nano prometheus.yml (lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/prometheus.yml*)
      - docker-compose up -d (exécution de la commande en background)
+
+---     
 
   2. Saisir l'adresse IP et le port au niveau du navigateur
 
