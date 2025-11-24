@@ -1,9 +1,10 @@
 services:
+ # Premère installation: Prometheus
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:v3.8.0-rc.0
     container_name: prometheus
     ports:
-      - 9090:9090
+      - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus-data:/prometheus
@@ -13,26 +14,31 @@ services:
     
     restart: unless-stopped
 
- #deuxieme installation : installation de grafana
+ # Deuxieme installation: installation de grafana
   
   grafana: 
-    image: grafana/grafana:latest
+    image: grafana/grafana:12.3-ubuntu
     container_name: grafana
     ports:
-      - 3000:3000
+      - "3000:3000"
     environment:
-      GF_SECURITY_ADMIN_USER: admin
-      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_SECURITY_ADMIN_USER: ${GF_SECURITY_ADMIN_USER}
+      GF_SECURITY_ADMIN_PASSWORD: ${GF_SECURITY_ADMIN_PASSWORD}  
+    depends_on:
+      - prometheus
+    restart: unless-stopped
     volumes:
       - grafana-data:/var/lib/grafana
 
-  #troisième partie node exporter
+  # Troisième installation:  node exporter
 
   node-exporter:
-    image: prom/node-exporter:latest
+    image: prom/node-exporter:v1.10.2
     container_name: node-exporter
     ports:
-      - 9100:9100
+      - "9100:9100"
+
+  # Quatrième installation: le cadvisor sera installé en fonction du besoin
 
 
 volumes:
