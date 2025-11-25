@@ -3,16 +3,25 @@ global:
   evaluation_interval: "15s"
 
 scrape_configs:
-  - job_name: 'prometheus'
+  - job_name: 'prometheus_self_monitoring'
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['192.168.9.110:9090']
 
   - job_name: 'grafana'
     static_configs:
       - targets: ['grafana:3000']
   
-  - job_name: 'node_exporter'
+  # WINDOWS HOST (node)
+  - job_name: 'windows_node'
     static_configs:
-      - targets: ['node_exporter:9100']
+      - targets: ['192.168.9.130:9182']
           
-  
+  # Linux HOST (nodes)
+  - job_name: 'Linux_nodes'
+    static_configs:
+      - targets:
+          - "192.168.9.109:9100"
+          - "192.168.9.115:9100"
+          - "192.168.9.120:9100"
+          - "192.168.9.132:9100"
+          - "192.168.9.133:9100"
