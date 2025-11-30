@@ -49,10 +49,10 @@ Avant d'installer prometheus et grafana. Il est nécessaire de choisir quelle m�
 
 * ETAPE 3 
 
-  Connexion via navigateur web
+  Connexion via navigateur web avec adresse IP
 
   Avant de passer à la supervision d'une infrastructure informatique, il est nécessaire que les différentes machines du système disposent d'un navigateur web. 
 
-  - Pour Prometheus: [http://IP_SERVEUR:9090]
-  - Pour Grafana: [http://IP_SERVEUR:3000]
+    - Pour Prometheus: **[http://IP_SERVEUR:9090]**
+    - Pour Grafana:    **[http://IP_SERVEUR:3000]**
 
