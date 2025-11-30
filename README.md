@@ -22,9 +22,11 @@ Dans un monde informatique où la gestion de ressources constitue un élément m
 
 ## PROCESSUS D'INSTALLATION
 
-Il existe divers méthodes pour installer prometheus et grafana. En ce qui nous concerne, nous allons utilisé l'outil Docker.
+Avant d'installer prometheus et grafana. Il est nécessaire de choisir quelle méthode d'installation à mettre en oeuvre, en ce qui nous concerne, nous allons nous servir de l'outil docker.
 
-* ETAPES 1
+* ETAPE 1
+  
+  Installation de docker engine et docker-compose
 
   - [installation docker](https://docs.docker.com/engine/install/ubuntu)
   - [installation docker compose](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
@@ -32,7 +34,9 @@ Il existe divers méthodes pour installer prometheus et grafana. En ce qui nous 
 
 ---
 
-* ETAPES 2
+* ETAPE 2
+
+  Déploiement de Prometheus et grafana via docker-compose
   
   1. Dans la home directory (/home/username ou ~):
      
@@ -43,6 +47,12 @@ Il existe divers méthodes pour installer prometheus et grafana. En ce qui nous 
 
 ---     
 
-  2. Saisir l'adresse IP et le port au niveau du navigateur
+* ETAPE 3 
 
-  en cours de redaction
+  Connexion via navigateur web
+
+  Avant de passer à la supervision d'une infrastructure informatique, il est nécessaire que les différentes machines du système disposent d'un navigateur web. 
+
+  - Pour Prometheus: [http://IP_SERVEUR:9090]
+  - Pour Grafana: [http://IP_SERVEUR:3000]
+
