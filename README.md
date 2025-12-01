@@ -1,34 +1,36 @@
 # INSTALLATION PROMETHEUS ET GRAFANA
 
-**Veuillez utilisé la Branche install pour voir toutes les différentes configurations**
+**📌📌📌Veuillez utilisé la Branche install pour voir toutes les différentes configurations**
 
 ---
 
 ## SOMMAIRE
 
-1. [INTRODUCTION](#introduction)
-2. [PRESENTATION](#presentation)
-3. [PROCESSUS D'INSTALLATION](#processus-dinstallation)
+- [INSTALLATION PROMETHEUS ET GRAFANA](#installation-prometheus-et-grafana)
+  - [SOMMAIRE](#sommaire)
+  - [📝📝📝 INTRODUCTION](#-introduction)
+  - [💻💻💻 PRESENTATION](#-presentation)
+  - [⚙️⚙️⚙️ PROCESSUS D'INSTALLATION](#️️️-processus-dinstallation)
 
 ---
 
-## INTRODUCTION
+## 📝📝📝 INTRODUCTION
 
 Dans un monde informatique où la gestion de ressources constitue un élément majeur pour le bon fonctionnnement d'un parc informatique, il est nécessaire de mettre en place un dispositif de surveillance qui permet de collecter les données de différents équipements au sein d'un parc informatique. Et ce, en temps réel. Il existe plusieurs outils tels que : Zabbix, nagios, cacti, grafana et prometheus, etc... Dans le cadre de notre projet, nous allons utilisé Grafana afin d'effectuer un monitoring complet de nos différentes machines clientes et serveurs.
 
 ---
 
-## PRESENTATION
+## 💻💻💻 PRESENTATION
 
 ---
 
-## PROCESSUS D'INSTALLATION
+## ⚙️⚙️⚙️ PROCESSUS D'INSTALLATION
 
 Avant d'installer prometheus et grafana. Il est nécessaire de choisir la méthode d'installation à mettre en place, en ce qui nous concerne, nous allons nous servir de l'outil docker.
 
 * ETAPE 1
   
-  Installation de docker engine et docker-compose
+  🐋🐋🐋 Installation de docker engine et docker-compose
 
   - [installation docker](https://docs.docker.com/engine/install/ubuntu)
   - [installation docker compose](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
@@ -38,7 +40,7 @@ Avant d'installer prometheus et grafana. Il est nécessaire de choisir la métho
 
 * ETAPE 2
 
-  Déploiement de Prometheus et grafana via docker-compose
+  📊🔔📈 Déploiement de Prometheus et grafana via docker-compose
   
   1. Dans la home directory (/home/username ou ~):
      
@@ -51,17 +53,18 @@ Avant d'installer prometheus et grafana. Il est nécessaire de choisir la métho
 
 * ETAPE 3 
 
-  Connexion via navigateur web avec adresse IP
+  🌐🔍🌐 Connexion via navigateur web avec adresse IP
 
-  Avant de passer à la supervision d'une infrastructure informatique, il est nécessaire que les différentes machines du système disposent d'un navigateur web. 
+  Avant de passer à la supervision d'une infrastructure informatique, il est nécessaire que les différentes machines du système    disposent d'un navigateur web. 
 
     - Pour Prometheus: **[http://IP_SERVEUR:9090]**
     - Pour Grafana:    **[http://IP_SERVEUR:3000]**
 
 
-----
+---
 
 Afin de mieux collecter les métriques de différents ordinateurs de notre parc, il est important d'installer
 
   - Node-exporter : Pour collecter les métriques sur les ordinateurs Linux.
-  - Windows-exporter : Pour collecter les métriques sur les ordinateurs Windows.
+  - Windows-exporter : Pour collecter les métriques sur les ordinateurs Windows. 
+
