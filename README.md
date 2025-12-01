@@ -1,5 +1,7 @@
 # INSTALLATION PROMETHEUS ET GRAFANA
 
+**Veuillez utilisé la Branche install pour voir toutes les différentes configurations**
+
 ---
 
 ## SOMMAIRE
@@ -22,7 +24,7 @@ Dans un monde informatique où la gestion de ressources constitue un élément m
 
 ## PROCESSUS D'INSTALLATION
 
-Avant d'installer prometheus et grafana. Il est nécessaire de choisir quelle méthode d'installation à mettre en oeuvre, en ce qui nous concerne, nous allons nous servir de l'outil docker.
+Avant d'installer prometheus et grafana. Il est nécessaire de choisir la méthode d'installation à mettre en place, en ce qui nous concerne, nous allons nous servir de l'outil docker.
 
 * ETAPE 1
   
@@ -56,3 +58,10 @@ Avant d'installer prometheus et grafana. Il est nécessaire de choisir quelle m�
     - Pour Prometheus: **[http://IP_SERVEUR:9090]**
     - Pour Grafana:    **[http://IP_SERVEUR:3000]**
 
+
+----
+
+Afin de mieux collecter les métriques de différents ordinateurs de notre parc, il est important d'installer
+
+  - Node-exporter : Pour collecter les métriques sur les ordinateurs Linux.
+  - Windows-exporter : Pour collecter les métriques sur les ordinateurs Windows.
