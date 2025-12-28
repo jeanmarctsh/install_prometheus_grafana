@@ -53,11 +53,26 @@ Avant d'installer prometheus et grafana. Il est nécessaire de choisir la métho
   
   1. Dans la home directory (/home/username ou ~):
      
-     - sudo mkdir nom_du_dossier
-     - sudo nano docker-compose.yml ( lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/docker-compose.yml* )
-     - sudo nano prometheus.yml (lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/prometheus.yml*)
-     - docker-compose up -d (exécution de la commande en background)
+       ```shell 
+       $ sudo mkdir nom_du_dossier && cd nom_du_dossier
+       ```
 
+       ```shell 
+       $ sudo nano docker-compose.yml
+       ```
+      ( lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/docker-compose.yml* )
+ 
+       ```shell 
+       $ sudo nano prometheus.yml 
+       ```
+      (lien vers le fichier de configuration: *https://github.com/jeanmarctsh/install_prometheus_grafana/blob/install/prometheus.yml*)
+
+      Exécution de la commande en arrière plan:  
+
+       ```shell 
+       $ docker-compose up -d 
+       ```
+     
 ---     
 
 * ETAPE 3 
