@@ -37,8 +37,7 @@ services:
     container_name: node-exporter
     command:
       - '--path.rootfs=/host'
-    ports:
-      - "9100:9100"
+    
     network_mode: host
     pid: host
     volumes:
