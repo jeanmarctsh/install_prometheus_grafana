@@ -1,5 +1,5 @@
 services:
- # Premère installation: Prometheus
+ # 1 installation of Prometheus
   prometheus:
     image: prom/prometheus:v3.10.0
     container_name: prometheus
@@ -14,7 +14,7 @@ services:
     
     restart: unless-stopped
 
- # Deuxieme installation: installation de grafana
+ # 2. installation of Grafana
   
   grafana: 
     image: grafana/grafana:12.3.5
@@ -30,7 +30,7 @@ services:
     volumes:
       - grafana-data:/var/lib/grafana
 
-  # Troisième installation:  node exporter
+  # 3. installation of node exporter
 
   node-exporter:
     image: prom/node-exporter:v1.10.2
@@ -43,7 +43,7 @@ services:
     volumes:
       - '/:/host:ro,rslave'
 
-  # Quatrième installation: le cadvisor sera installé en fonction du besoin
+  # 4. installation of cadvisor SAP
 
 
 volumes:
