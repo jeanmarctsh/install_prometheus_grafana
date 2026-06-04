@@ -31,6 +31,8 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
   INSTALL_PROMETHEUS_GRAFANA/
   ├── docker-compose.yml       # Configuration of different services in the main file "docker-compose.yml"
   ├── prometheus.yml           # Prometheus main configuration file "prometheus.yml"
+  ├── .gitignore               # Define rules in the .gitignore file
+  ├── .env.example             # Example .env file
   └── README.md                # Project description
   ```
 
