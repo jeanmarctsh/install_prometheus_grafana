@@ -1,0 +1,7 @@
+## Skipped file(s)
+
+.env*
+
+## No skipped file(s)
+
+!.env.example
