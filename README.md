@@ -1,8 +1,9 @@
-# 🚀  Hands-on with Prometheus and Grafana
+
+<h1 align="center">Hands-on with Prometheus and Grafana</h1>
 
 ---
 
-## 📝 About the tools
+## About the tools
 
 Prometheus and Grafana are two complementary open-source tools for monitoring. Prometheus collects and stores metrics, while Grafana enables their visualization through dashboards, facilitating data interpretation and rapid decision-making, particularly through alerting capabilities.
 
@@ -15,7 +16,7 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
   - Dashboard in grafana
   - Metrics collection system
   
-## 🎯 Expected outcome
+## Expected outcome
 
   - Real-time visibility of server health (containers, disk, cpu, ram, etc...)
   - Early detection of perfomance issues
@@ -24,10 +25,10 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
 
 ---
 
-## 📂 Project structure
+## Project structure
 
   ```text
-  INSTALL_PROMETHEUS_GRAFANA
+  INSTALL_PROMETHEUS_GRAFANA/
   ├── docker-compose.yml       # Configuration of different services in the main file "docker-compose.yml"
   ├── prometheus.yml           # Prometheus main configuration file "prometheus.yml"
   └── README.md                # Project description
@@ -35,7 +36,7 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
 
 ---
 
-## 🔧 Prerequisites and Requirements
+## Prerequisites and Requirements
 
   - Operating System : Ubuntu 22.04 LTS
   - Storage : SSD, 25GB
@@ -47,11 +48,11 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
 
 ---
 
-## ⚙️ Installation Procedure
+## Installation Procedure
 
   * STEP 1
     
-    🐋 Installation of docker engine and docker-compose.
+     Installation of docker engine and docker-compose.
 
     - [installation of docker](https://docs.docker.com/engine/install/ubuntu)
     - [installation of docker compose](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
@@ -61,7 +62,7 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
 
   * STEP 2
 
-    📊🔔📈 Deployment of Prometheus and Grafana using docker-compose
+    Deployment of Prometheus and Grafana using docker-compose
     
     1. In the user's home directory (/home/username or ~):
       
@@ -89,7 +90,7 @@ Prometheus and Grafana are two complementary open-source tools for monitoring. P
 
   * STEP 3 
 
-    🌐 Web Access via Browser
+     Web Access via Browser
 
     Access the services using your web browser. A browser is required for monitoring dashboards and system visualization. 
 
