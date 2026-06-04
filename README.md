@@ -1,5 +1,5 @@
 
-<h1 align="center">Hands-on with Prometheus and Grafana</h1>
+<h1 align="center"> Monitoring client machines and servers using Prometheus and Grafana to collect, visualize, and analyze system performance metrics in real time. </h1>
 
 ---
 
